@@ -52,12 +52,20 @@
         <processorPath useClasspath="true" />
         <module name="consu-dao" />
       </profile>
+      <profile default="false" name="Annotation profile for consu-utils" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="consu-utils" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="consu-config" target="1.7" />
       <module name="consu-dao" target="1.7" />
       <module name="consu-model" target="1.7" />
       <module name="consu-service" target="1.7" />
+      <module name="consu-utils" target="1.7" />
       <module name="consu-web" target="1.7" />
       <module name="consumerproject" target="1.7" />
     </bytecodeTargetLevel>

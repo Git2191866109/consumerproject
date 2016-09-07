@@ -13,6 +13,7 @@
         <module>consu-service</module>
         <module>consu-web</module>
         <module>consu-dao</module>
+        <module>consu-utils</module>
     </modules>
 
     <name>consu-parent</name>
