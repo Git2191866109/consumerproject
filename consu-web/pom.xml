@@ -38,6 +38,12 @@
             <groupId>com.mw.consumer</groupId>
             <version>${consu-config.version}</version>
         </dependency>
+        
+        <dependency>
+            <artifactId>consu-utils</artifactId>
+            <groupId>com.mw.consumer</groupId>
+            <version>${consu-utils.version}</version>
+        </dependency>
 
         <!--&lt;!&ndash;junit&ndash;&gt;-->
         <dependency>

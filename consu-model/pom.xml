@@ -20,6 +20,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+
+        <dependency>
+            <artifactId>consu-utils</artifactId>
+            <groupId>com.mw.consumer</groupId>
+            <version>${consu-utils.version}</version>
+        </dependency>
         <!--&lt;!&ndash;junit&ndash;&gt;-->
         <dependency>
             <groupId>junit</groupId>

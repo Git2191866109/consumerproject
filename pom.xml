@@ -27,6 +27,7 @@
         <consu-service.version>1.0-SNAPSHOT</consu-service.version>
         <consu-web.version>1.0-SNAPSHOT</consu-web.version>
         <consu-dao.version>1.0-SNAPSHOT</consu-dao.version>
+        <consu-utils.version>1.0-SNAPSHOT</consu-utils.version>
 
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>

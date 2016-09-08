@@ -31,6 +31,7 @@
     <orderEntry type="module" module-name="consu-dao" />
     <orderEntry type="module" module-name="consu-service" />
     <orderEntry type="module" module-name="consu-config" />
+    <orderEntry type="module" module-name="consu-utils" />
     <orderEntry type="library" name="Maven: junit:junit:4.9" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
