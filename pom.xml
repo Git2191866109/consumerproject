@@ -10,10 +10,11 @@
     <modules>
         <module>consu-config</module>
         <module>consu-model</module>
-        <module>consu-service</module>
+        <module>consu-service-interface</module>
         <module>consu-web</module>
         <module>consu-dao</module>
         <module>consu-utils</module>
+        <module>consu-service-web</module>
     </modules>
 
     <name>consu-parent</name>
@@ -24,10 +25,11 @@
         <!--此处必须添加，子包需要引用这里的version-->
         <consu-config.version>1.0-SNAPSHOT</consu-config.version>
         <consu-model.version>1.0-SNAPSHOT</consu-model.version>
-        <consu-service.version>1.0-SNAPSHOT</consu-service.version>
+        <consu-service-interface.version>1.0-SNAPSHOT</consu-service-interface.version>
         <consu-web.version>1.0-SNAPSHOT</consu-web.version>
         <consu-dao.version>1.0-SNAPSHOT</consu-dao.version>
         <consu-utils.version>1.0-SNAPSHOT</consu-utils.version>
+        <consu-service-web.version>1.0-SNAPSHOT</consu-service-web.version>
 
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>

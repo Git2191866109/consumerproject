@@ -9,12 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>consu-service</artifactId>
+    <artifactId>consu-service-interface</artifactId>
     <groupId>com.mw.consumer</groupId>
-    <version>${consu-service.version}</version>
+    <version>${consu-service-interface.version}</version>
     <packaging>jar</packaging>
 
-    <name>consu-service</name>
+    <name>consu-service-interface</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>

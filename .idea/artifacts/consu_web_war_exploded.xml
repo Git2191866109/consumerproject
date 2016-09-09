@@ -13,8 +13,8 @@
           <element id="archive" name="consu-dao-1.0-SNAPSHOT.jar">
             <element id="module-output" name="consu-dao" />
           </element>
-          <element id="archive" name="consu-service-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="consu-service" />
+          <element id="archive" name="consu-service-interface-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="consu-service-interface" />
           </element>
           <element id="archive" name="consu-config-1.0-SNAPSHOT.jar">
             <element id="module-output" name="consu-config" />

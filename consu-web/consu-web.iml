@@ -29,7 +29,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="consu-model" />
     <orderEntry type="module" module-name="consu-dao" />
-    <orderEntry type="module" module-name="consu-service" />
+    <orderEntry type="module" module-name="consu-service-interface" />
     <orderEntry type="module" module-name="consu-config" />
     <orderEntry type="module" module-name="consu-utils" />
     <orderEntry type="library" name="Maven: junit:junit:4.9" level="project" />

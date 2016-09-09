@@ -5,7 +5,8 @@
     <file url="file://$PROJECT_DIR$/consu-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consu-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consu-model" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/consu-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consu-service-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consu-service-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consu-utils" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consu-web" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

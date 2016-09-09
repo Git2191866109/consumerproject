@@ -28,9 +28,9 @@
         </dependency>
 
         <dependency>
-            <artifactId>consu-service</artifactId>
+            <artifactId>consu-service-interface</artifactId>
             <groupId>com.mw.consumer</groupId>
-            <version>${consu-service.version}</version>
+            <version>${consu-service-interface.version}</version>
         </dependency>
 
         <dependency>

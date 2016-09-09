@@ -5,7 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/consu-config/consu-config.iml" filepath="$PROJECT_DIR$/consu-config/consu-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/consu-dao/consu-dao.iml" filepath="$PROJECT_DIR$/consu-dao/consu-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/consu-model/consu-model.iml" filepath="$PROJECT_DIR$/consu-model/consu-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/consu-service/consu-service.iml" filepath="$PROJECT_DIR$/consu-service/consu-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consu-service-interface/consu-service-interface.iml" filepath="$PROJECT_DIR$/consu-service-interface/consu-service-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consu-service-web/consu-service-web.iml" filepath="$PROJECT_DIR$/consu-service-web/consu-service-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/consu-utils/consu-utils.iml" filepath="$PROJECT_DIR$/consu-utils/consu-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/consu-web/consu-web.iml" filepath="$PROJECT_DIR$/consu-web/consu-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumerproject.iml" filepath="$PROJECT_DIR$/consumerproject.iml" />
