@@ -6,8 +6,10 @@ package com.mw.consumer.domain;
 public class Dictionary {
     private int id;
     private String name;
-    private int type;
+    private int parentId; /*该id的父级Id，顶级id为0，一级：1,二级：2，三级：3*/
+    private int level; /*当前id的级别*/
     private String description;
+    private String updateTime;/*更新日期*/
 
     public int getId() {
         return id;
@@ -25,12 +27,20 @@ public class Dictionary {
         this.name = name;
     }
 
-    public int getType() {
-        return type;
+    public int getParentId() {
+        return parentId;
     }
 
-    public void setType(int type) {
-        this.type = type;
+    public void setParentId(int parentId) {
+        this.parentId = parentId;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public String getDescription() {
@@ -41,13 +51,23 @@ public class Dictionary {
         this.description = description;
     }
 
+    public String getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
+    }
+
     @Override
     public String toString() {
         return "Dictionary{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", type=" + type +
+                ", parentId=" + parentId +
+                ", level=" + level +
                 ", description='" + description + '\'' +
+                ", updateTime='" + updateTime + '\'' +
                 '}';
     }
 }

@@ -3,7 +3,7 @@ package com.mw.consumer.domain;
 /**
  * Created by wei.ma on 2016/9/2.
  */
-public class ConsumerStatistics {
+public class ConsumerStatistic {
     private int id;
     private double perday_cost;
     private String date;
@@ -52,7 +52,7 @@ public class ConsumerStatistics {
 
     @Override
     public String toString() {
-        return "ConsumerStatistics{" +
+        return "ConsumerStatistic{" +
                 "id=" + id +
                 ", perday_cost=" + perday_cost +
                 ", date='" + date + '\'' +

@@ -78,13 +78,19 @@
       <column id="22" parent="4" name="name">
         <data-type>varchar(64)</data-type>
       </column>
-      <column id="23" parent="4" name="type">
+      <column id="23" parent="4" name="parentId">
         <data-type>int(11)</data-type>
       </column>
-      <column id="24" parent="4" name="description">
+      <column id="24" parent="4" name="level">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="25" parent="4" name="description">
         <data-type>varchar(64)</data-type>
       </column>
-      <key id="25" parent="4" name="PRIMARY">
+      <column id="26" parent="4" name="updateTime">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <key id="27" parent="4" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
