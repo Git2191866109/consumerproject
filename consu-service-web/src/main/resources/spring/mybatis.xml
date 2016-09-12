@@ -9,7 +9,6 @@
     <!-- Use c3p0 as the database connection pool -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="${driverClassName}" />
-        <!--项目搭建的过程中，这里使用的${url},然后一直报错url http://maven.apache.org,url 明明是mysql的，这里取到的是别的名字要区分-->
         <property name="url" value="${jdbcUrl}"/>
         <property name="username" value="${username}"/>
         <property name="password" value="${password}"/>

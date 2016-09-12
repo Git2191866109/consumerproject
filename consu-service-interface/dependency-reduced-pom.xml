@@ -7,9 +7,9 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mw.consumer</groupId>
-  <artifactId>consu-service</artifactId>
-  <name>consu-service</name>
-  <version>${consu-service.version}</version>
+  <artifactId>consu-service-interface</artifactId>
+  <name>consu-service-interface</name>
+  <version>${consu-service-interface.version}</version>
   <url>http://maven.apache.org</url>
 </project>
 

@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Created by wei.ma on 2016/9/2.
  */
-@Service("ConsumerStatisticService")
+@Service("consumerStatisticService")
 @Transactional
 public class ConsumerStatisticServiceImpl implements IConsumerStatisticService {
     @Autowired
