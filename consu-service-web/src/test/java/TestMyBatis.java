@@ -3,6 +3,7 @@ import com.mw.consumer.domain.User;
 import com.mw.consumer.service.IConsumerStatisticService;
 import com.mw.consumer.service.IDictionaryService;
 import com.mw.consumer.service.IUserService;
+import com.mw.consumer.utils.DateUtils;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -46,7 +47,24 @@ public class TestMyBatis {
         user.setId(2);
         user.setName("李四");
         user.setDate(new Date().toString());
-        System.out.println(userService.insertUser(user));
+        userService.insertUser(user);
+        System.out.println(userService.getUserById(2));
+
+    }
+
+    @Test
+    public void testUpdate__user() {
+        User user = new User();
+        user.setId(2);
+//        user.setName("李四");
+//        user.setDate(new Date().toString());
+//        user.setCost_afternoon(12.0);
+//        user.setCost_morning(3.0);
+//        user.setCost_noon(33.0);
+//        user.setNickName("lisi");
+        user.setDate(DateUtils.getToday());
+        userService.updateUser(user);
+        System.out.println(userService.getUserById(2).toString());
 
     }
 }

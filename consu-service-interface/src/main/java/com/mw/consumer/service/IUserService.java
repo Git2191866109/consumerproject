@@ -10,4 +10,7 @@ public interface IUserService {
     User getUserById(int id);
 
     long insertUser(User user);
+
+    long updateUser(User user);
 }
+

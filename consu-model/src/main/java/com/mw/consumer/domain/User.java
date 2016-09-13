@@ -11,7 +11,7 @@ public class User implements Serializable {
     private String name;
     private double cost_morning;
     private double cost_noon;
-    private double cos_afternoon;
+    private double cost_afternoon;
     private String nickName;
     private String description;
     private String date;
@@ -48,12 +48,12 @@ public class User implements Serializable {
         this.cost_noon = cost_noon;
     }
 
-    public double getCos_afternoon() {
-        return cos_afternoon;
+    public double getCost_afternoon() {
+        return cost_afternoon;
     }
 
-    public void setCos_afternoon(double cos_afternoon) {
-        this.cos_afternoon = cos_afternoon;
+    public void setCost_afternoon(double cost_afternoon) {
+        this.cost_afternoon = cost_afternoon;
     }
 
     public String getNickName() {
@@ -96,7 +96,7 @@ public class User implements Serializable {
                 ", name='" + name + '\'' +
                 ", cost_morning=" + cost_morning +
                 ", cost_noon=" + cost_noon +
-                ", cos_afternoon=" + cos_afternoon +
+                ", cost_afternoon=" + cost_afternoon +
                 ", nickName='" + nickName + '\'' +
                 ", description='" + description + '\'' +
                 ", date='" + date + '\'' +

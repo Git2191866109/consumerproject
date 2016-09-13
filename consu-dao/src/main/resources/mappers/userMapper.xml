@@ -13,9 +13,9 @@
 
     <resultMap id="userResultMap" type="User">
         <result column="id" property="id" jdbcType="INTEGER"/>
-        <result column="userId" property="userid" jdbcType="INTEGER"/>
+        <result column="userid" property="userId" jdbcType="INTEGER"/>
         <result column="name" property="name" jdbcType="VARCHAR"/>
-        <result column="nickname" property="nickname" jdbcType="VARCHAR"/>
+        <result column="nickname" property="nickName" jdbcType="VARCHAR"/>
         <result column="description" property="description" jdbcType="VARCHAR"/>
         <result column="date" property="date" jdbcType="VARCHAR"/>
 
@@ -27,4 +27,31 @@
     <select id="getById" parameterType="long" resultType="User">
         select * from user where id=#{id}
     </select>
+
+    <insert id="insert" parameterType="User">
+        INSERT INTO user (id,userid,name,cost_morning,cost_noon,cost_afternoon,nickname,description,date)
+        VALUES
+        (#{id},#{userId},#{name},#{cost_morning},#{cost_noon},#{cost_afternoon},#{nickName},#{description},#{date})
+    </insert>
+
+    <update id="update" parameterType="User">
+        update user
+        <set>
+            <trim prefixOverrides=",">
+                <if test="id != null and id != ''">,id=#{id}</if>
+                <if test="userId != null and userId != ''">,userid=#{userId}</if>
+                <if test="name != null and name != ''">,name=#{name}</if>
+                <if test="cost_morning != null and cost_morning != ''">,cost_morning=#{cost_morning}</if>
+                <if test="cost_noon != null and cost_noon != ''">,cost_noon=#{cost_noon}</if>
+                <if test="cost_afternoon != null and cost_afternoon != ''">,cost_afternoon=#{cost_afternoon}</if>
+                <if test="nickName != null and nickName != ''">,nickname=#{nickName}</if>
+                <if test="description != null and description != ''">,description=#{description}</if>
+                <if test="date != null and date != ''">,date=#{date}</if>
+            </trim>
+        </set>
+        where
+        id=${id}
+    </update>
+
+
 </mapper>

@@ -26,4 +26,9 @@ public class UserServiceImpl implements IUserService {
         return iUserDao.insert(user);
     }
 
+    @Override
+    public long updateUser(User user) {
+        return iUserDao.update(user);
+    }
+
 }
