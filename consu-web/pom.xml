@@ -32,6 +32,11 @@
             <groupId>com.mw.consumer</groupId>
             <version>${consu-service-interface.version}</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<artifactId>consu-service-web</artifactId>-->
+            <!--<groupId>com.mw.consumer</groupId>-->
+            <!--<version>${consu-service-web.version}</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <artifactId>consu-config</artifactId>

@@ -1,11 +1,8 @@
 package com.mw.consumer.service.impl;
 
 import com.mw.consumer.dao.interfaces.IDictionaryDao;
-import com.mw.consumer.dao.interfaces.IUserDao;
 import com.mw.consumer.domain.Dictionary;
-import com.mw.consumer.domain.User;
 import com.mw.consumer.service.IDictionaryService;
-import com.mw.consumer.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

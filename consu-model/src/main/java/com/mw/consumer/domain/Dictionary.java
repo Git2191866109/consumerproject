@@ -1,9 +1,11 @@
 package com.mw.consumer.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by wei.ma on 2016/9/2.
  */
-public class Dictionary {
+public class Dictionary implements Serializable {
     private int id;
     private String name;
     private int parentId; /*该id的父级Id，顶级id为0，一级：1,二级：2，三级：3*/

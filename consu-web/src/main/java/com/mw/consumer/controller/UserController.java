@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.portlet.ModelAndView;
 
 /**
  * Created by wei.ma on 2016/9/7.
@@ -18,9 +19,12 @@ public class UserController {
     private IUserService userService;
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public User view(@PathVariable("id") Integer id) {
+    public ModelAndView view(@PathVariable("id") Integer id) {
+        ModelAndView modelAndView = new ModelAndView();
         User user = new User();
         user =userService.getUserById(id);
-        return user;
+        modelAndView.addObject("user",user);
+        modelAndView.setView("1.jsp");
+        return modelAndView;
     }
 }

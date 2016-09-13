@@ -11,10 +11,10 @@
 
     <!-- 使用zookeeper注册中心暴露服务地址 -->
     <!-- 注册中心地址 -->
-    <dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}"/>
+    <dubbo:registry protocol="zookeeper" address="${dubbo.address}"/>
 
     <!-- 用户服务接口 -->
-    <dubbo:reference interface="com.mw.consumer.service.IUserService" id="userService" check="false"/>
+    <dubbo:reference id="userService" check="false" interface="com.mw.consumer.service.IUserService" />
 
 
 </beans>

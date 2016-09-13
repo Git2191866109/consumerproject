@@ -3,13 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- 引入配置文件 -->
-    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:properties/jdbc.properties"/>
-    </bean>
-    <!-- Use c3p0 as the database connection pool -->
+    <!--<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+        <!--<property name="location" value="classpath:properties/jdbc.properties"/>-->
+    <!--</bean>-->
+    <!-- Use durid as the database connection pool -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
-        <property name="driverClassName" value="${driverClassName}" />
         <!--项目搭建的过程中，这里使用的${url},然后一直报错url http://maven.apache.org,url 明明是mysql的，这里取到的是别的名字要区分-->
+        <property name="driverClassName" value="${driverClassName}"/>
         <property name="url" value="${jdbcUrl}"/>
         <property name="username" value="${username}"/>
         <property name="password" value="${password}"/>
@@ -52,11 +52,6 @@
         <property name="basePackage" value="com.mw.consumer.dao.interfaces"/>
         <!--这边不能使用ref="sqlSessionFactory"，原因是上面加载配置文件导致这边报错-->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
-    </bean>
-
-    <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
     </bean>
 
 </beans>

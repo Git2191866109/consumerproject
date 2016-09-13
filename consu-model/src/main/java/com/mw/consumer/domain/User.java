@@ -1,9 +1,11 @@
 package com.mw.consumer.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by wei.ma on 2016/9/2.
  */
-public class User {
+public class User implements Serializable {
     private int id;
     private int userId;
     private String name;

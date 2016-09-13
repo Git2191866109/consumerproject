@@ -1,9 +1,11 @@
 package com.mw.consumer.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by wei.ma on 2016/9/2.
  */
-public class ConsumerStatistic {
+public class ConsumerStatistic implements Serializable{
     private int id;
     private double perday_cost;
     private String date;
