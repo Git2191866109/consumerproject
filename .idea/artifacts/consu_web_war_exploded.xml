@@ -22,6 +22,7 @@
           <element id="archive" name="consu-utils-1.0-SNAPSHOT.jar">
             <element id="module-output" name="consu-utils" />
           </element>
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.7" />
           <element id="library" level="project" name="Maven: junit:junit:4.9" />
           <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />

@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by wei.ma on 2016/9/2.
  */
@@ -29,6 +31,11 @@ public class UserServiceImpl implements IUserService {
     @Override
     public long updateUser(User user) {
         return iUserDao.update(user);
+    }
+
+    @Override
+    public List<User> getAll() {
+        return iUserDao.getAll();
     }
 
 }

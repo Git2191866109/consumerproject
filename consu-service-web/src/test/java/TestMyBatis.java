@@ -12,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by wei.ma on 2016/9/2.
@@ -33,6 +34,14 @@ public class TestMyBatis {
         User user = userService.getUserById(1);
         logger.info("值：" + user.toString());
         System.out.println(user.toString());
+    }
+
+    @Test
+    public void testSelect_Alluser() {
+        List<User> userList = userService.getAll();
+        for (User u : userList ) {
+            System.out.println(u.toString());
+        }
     }
 
     @Test

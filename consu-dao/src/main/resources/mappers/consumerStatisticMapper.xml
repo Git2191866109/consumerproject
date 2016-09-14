@@ -14,4 +14,6 @@
     <select id="getById" parameterType="long" resultType="ConsumerStatistic">
         select * from consumer_statistic where id=#{id}
     </select>
+
+
 </mapper>

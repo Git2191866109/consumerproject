@@ -28,6 +28,10 @@
         select * from user where id=#{id}
     </select>
 
+    <select id="getAll" resultType="User">
+        select * from user
+    </select>
+
     <insert id="insert" parameterType="User">
         INSERT INTO user (id,userid,name,cost_morning,cost_noon,cost_afternoon,nickname,description,date)
         VALUES
